@@ -1,0 +1,23 @@
+{
+  "name": "js-enum",
+  "version": "0.0.1",
+  "description": "Monkey patch enums and simple enum based pattern matching for JavaScript",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaimeloeuf/js-enum.git"
+  },
+  "keywords": [
+    "enum",
+    "pattern-matching"
+  ],
+  "author": "JJ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaimeloeuf/js-enum/issues"
+  },
+  "homepage": "https://github.com/Jaimeloeuf/js-enum#readme"
+}
