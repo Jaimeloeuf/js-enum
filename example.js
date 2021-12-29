@@ -7,10 +7,18 @@ const errors = createEnum([
 ]);
 // console.log(errors);
 
+// Invalid code
 // const myError = constructEnumVariant(errors, "SomethingElse", ["a", 5, 10]);
 // const myError = constructEnumVariant(errors, "SomethingElsee", [5, "a"]);
+
+// Valid ways of constructing a variant
 const myError = constructEnumVariant(errors, "SomethingElse", [7, "a"]);
+const myError2 = errors.create("SomethingElse", [7, "a"]);
 // console.log(myError);
+
+/* Pattern matching */
+// Shorthand syntax
+errors.match(myError, {});
 
 match(myError, errors, {
   RuntimeError: function () {

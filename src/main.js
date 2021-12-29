@@ -56,6 +56,14 @@ function createEnum(arrayOfVariants) {
     };
   }
 
+  /* These short hand methods means that user cannot create variants with name create and match */
+
+  enumObject.create = (variantName, tupleValues = []) =>
+    constructEnumVariant(enumObject, variantName, tupleValues);
+
+  enumObject.match = (enumVariant, patternArms) =>
+    match(enumVariant, enumObject, patternArms);
+
   return Object.freeze(enumObject);
 }
 
